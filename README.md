@@ -153,12 +153,37 @@ To solve this problem we need both the quantity and the category column
      We can see that the Morning shift has slightly more orders than the evening shift
       <br />
       <br />
-       <h2>Note:</h2>
-       * The CRM+SALES+OPPORTUNITY raw data file is uploaded above and the excel file for the Project after filtering, sorting and addition of new column is also uploaded above as Tableau Project Excel </b> 
+     4) The company needs to know the type of pizza with the most sales and the ones with the least sales so they can know how to balance production
+<br />
+<br />
+     * To solve this problem we need the pizza_type_id, name, quantity and price column
+     <br />
+     * Hence, i joined the pizzas, pizza_types and order_details table
+     <br />
+     * I also found the total_price by multiplying the quantity and the price
+     <br />
+     <br />
+<img src="https://i.imgur.com/Do2QKFD.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+ <br />
+      <br />
+     * I assigned a CTE to the query above
+      <br />
+     * From the CTE i selected pizza_type_id, name and sumed the total_price to get the total sales of each pizza type
+      <br />
+     * Then i ordered it from the highest total_sales to the lowest total_sales to get the pizza with the highest sales
+      <br />
+     <br />
+<img src="https://i.imgur.com/gLRhcWx.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+     <br />
+     We can see that the Thai Chicken Pizza has the most sales from the result in the image above 
+     <br />
+     And The Brie Carre Pizza has the lowest sales as seen in the diagram below:
+      <br />
+      <br />
+     <img src="https://i.imgur.com/psvp4s6.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
        <br />
-    <h1>Tableau Project File</h1>
-
- ### [TABLEAU PUBLIC](https://public.tableau.com/views/CRMSALESOPPORTUNITY/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)
+       <h2>Note:</h2>
+       * The PIZZA+PLACE+SALES csv file is attached to this project
 
 </p>
 
