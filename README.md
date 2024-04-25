@@ -122,6 +122,37 @@ To solve this problem we need both the quantity and the category column
         <img src="https://i.imgur.com/7b8f0x9.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
       <br />
      We can see that the large size pizza has the most sales since recession started in April and the XXL has the least sales since recession started
+     <br />
+     <br />
+     3) The company is trying to employ more workers. I was reached out to as the data analyst to check which shift gets the most order so they can know what shift needs more workers. Knowing that Morning shift starts at 9:00 and ends at 17;00, while Evening shift starts at 17:00 and ends at 00:00
+<br />
+     <br />
+     * To solve this problem we need the time and order_id column, which is both in the orders table
+      <br />
+     * Because i have to find out the amount of order during both shifts. I selected hour(time) as hour and order_id
+      <br />
+      <br />
+      <img src="https://i.imgur.com/pvbOIwX.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+      <br />
+       <br />
+     * I assigned a CTE to the query above
+     <br />
+     * From the CTE i selected order_id and made a case statement for morning shift and evening shift
+     <br />
+     <br />
+     <img src="https://i.imgur.com/9MlP9dD.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+      <br />
+      <br />
+      * I assigned another cte to the whole query again i.e cte2
+         <br />
+         * Then i count the order_id as total_amount_of _order grouped by the workers_shift to get the total order for both shifts
+         <br />
+         <br />
+      <img src="https://i.imgur.com/8TNoERN.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+      <br />
+     We can see that the Morning shift has slightly more orders than the evening shift
+      <br />
+      <br />
        <h2>Note:</h2>
        * The CRM+SALES+OPPORTUNITY raw data file is uploaded above and the excel file for the Project after filtering, sorting and addition of new column is also uploaded above as Tableau Project Excel </b> 
        <br />
